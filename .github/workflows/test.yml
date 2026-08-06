@@ -3,6 +3,7 @@ name: CI Test
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -10,4 +11,3 @@ jobs:
     steps:
       - name: Simulate failure
         run: exit 1
-#jvcjv vh
